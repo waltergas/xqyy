@@ -20,7 +20,7 @@ for i in range(0,len(name_list)):
     name_result1 = name_list[i] + ' ' + result_score_list[i]
     name_result.append(name_result1)
 today = datetime.date.today()
-print(name_result)
+print(today,name_result)
 #print(name_list)
 #print(result_int)
 print(today,result_sum)
