@@ -1,5 +1,6 @@
 import re
 import urllib.request as urllib2
+import datetime
 header={"User-Agent" : "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0;"}#模仿浏览器
 request = urllib2.Request('https://healthcare.xqyk024.com/consult/diagnosis/doctors?pageNumber=1&pageSize=20&order=0',headers=header)
 response = urllib2.urlopen(request)
@@ -18,7 +19,8 @@ name_result = []
 for i in range(0,len(name_list)):
     name_result1 = name_list[i] + ' ' + result_score_list[i]
     name_result.append(name_result1)
+today = datetime.date.today()
 print(name_result)
 #print(name_list)
 #print(result_int)
-print(result_sum)
+print(date，result_sum)
