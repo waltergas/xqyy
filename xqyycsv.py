@@ -29,7 +29,7 @@ def write_csv(num_date,num_name,num_sum):
         csv_write.writerow(data_row)
         f.close()
 def write_md(num_date,num_name,num_sum):
-    path  = "README.MD"
+    path  = "README.md"
     with open(path,'a+',newline='') as f:
         f.write(str(num_date)+"\0"+str(num_name)+"\0"+str(num_sum))
         f.close()        
