@@ -34,4 +34,10 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        python xqyy.py 
+        python xqyycsv.py
+    - name: Upload to this repo
+      run: |
+        git config --local user.name "waltergas"
+        git config --local user.email "gaisfordupjjziv@gmail.com"
+        git commit -m 'upload result'
+        git push -u origin master        
