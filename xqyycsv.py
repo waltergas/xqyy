@@ -34,7 +34,7 @@ def write_md(num_date,num_name,num_sum):
         f.write(num_date,num_name,num_sum)
         f.close()        
 write_csv(today,name_result,result_sum)
-
+write_md(today,name_result,result_sum)
 print(today,name_result,result_sum)
 #print(name_list)
 #print(result_int)
