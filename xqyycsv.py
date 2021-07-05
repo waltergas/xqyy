@@ -1,10 +1,10 @@
 import re
-import urllib.request as urllib2
+import urllib.request
 import datetime
 import csv
 header={"User-Agent" : "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0;"}#模仿浏览器
-request = urllib2.Request('https://healthcare.xqyk024.com/consult/diagnosis/doctors?pageNumber=1&pageSize=20&order=0',headers=header)
-response = urllib2.urlopen(request)
+url = 'https://healthcare.xqyk024.com/consult/diagnosis/doctors?pageNumber=1&pageSize=20&order=0'
+response = urllib.request.urlopen(url, headers=header)
 buff = response.read()
 html = buff.decode()
 #print(html)
